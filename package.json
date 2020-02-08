@@ -1,8 +1,8 @@
 {
-  "name": "name-project",
+  "name": "customer-development",
   "version": "1.0.0",
   "private": true,
-  "description": "Полное название проекта",
+  "description": "Customer Development",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "10.1.x",
