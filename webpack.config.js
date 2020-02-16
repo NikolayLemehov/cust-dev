@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'development', // Режим сборки
   output: {// Настройка выходного файла
-    filename: `script.js`,
+    filename: `bundle.js`,
   },
   devtool: 'source-map', // Подключаем sourcemaps
   module: {
