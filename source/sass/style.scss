@@ -1,3 +1,28 @@
 @import "normalize";
+@import "variables";
 @import "fonts";
 @import "scaffolding";
+
+@import "blocks/section-inner";
+
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/nav-city";
+@import "blocks/nav-menu";
+@import "blocks/sign-course";
+
+@import "blocks/page-main";
+@import "blocks/section-top";
+
+@import "blocks/section-if-not-do";
+@import "blocks/section-why";
+@import "blocks/section-will-on-course";
+@import "blocks/section-result";
+@import "blocks/section-belief";
+@import "blocks/section-recall";
+@import "blocks/section-past-flow";
+@import "blocks/section-price";
+@import "blocks/section-bonus";
+@import "blocks/section-sign-up";
+
+@import "blocks/page-footer";

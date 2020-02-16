@@ -3,6 +3,9 @@ html {
 }
 
 body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
   font-family: Montserrat, Arial, sans-serif;
 }
 
@@ -30,4 +33,21 @@ input[type="radio"].visually-hidden {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+body {
+  background: #ffffff url("../layout/cust-dev-desktop.png") no-repeat 50% 0;
+  background-size: $desktop-width auto;
+  min-height: 750px;
+}
+@media (max-width: calc(#{$desktop-width} - 1px - 200px)) {
+  body {
+    background: #ffffff url("../layout/cust-dev-tablet.png") no-repeat 50% 0;
+    background-size: $tablet-width auto;
+  }
+}
+@media (max-width: calc(#{$tablet-width} - 1px)) {
+  body {
+    background: #ffffff url("../layout/cust-dev-mobile.png") no-repeat 50% 0;
+    background-size: $mobile-width auto;
+  }
 }

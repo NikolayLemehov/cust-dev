@@ -1,0 +1,21 @@
+.nav-city {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-city li {
+  margin-right: 25px;
+}
+
+.nav-city a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #2F80ED;
+}

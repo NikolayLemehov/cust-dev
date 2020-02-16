@@ -1,0 +1,22 @@
+.section-inner {
+  max-width: calc(#{$desktop-width} - 100px * 2); // временно
+  height: 100%; // временно
+  margin: 0 auto;
+  padding: 0 35px;
+  &--header {
+    padding: 0 35px 0 30px;
+  }
+  &--if-not-do {
+    padding: 0 35px 0 30px;
+  }
+  &--why {
+    padding: 0 135px 0 230px;
+  }
+  &--will-on-course {
+    padding: 0 135px;
+  }
+  &--past-flow {
+    max-width: $desktop-width; // временно
+    padding: 0;
+  }
+}
