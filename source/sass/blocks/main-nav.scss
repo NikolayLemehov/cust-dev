@@ -1,4 +1,25 @@
 .main-nav {
   display: flex;
+  justify-content: center;
+  min-height: 104px;
   padding: 30px 0 30px 0;
+}
+
+.main-nav__inner {
+  display: flex;
+  justify-content: space-between;
+  width: calc(#{$desktop-width} - 100px * 2);
+  padding: 0 34px 0 30px;
+}
+
+.main-nav__city {
+  margin: 0 114px 0 0;
+}
+
+.main-nav__menu {
+  margin: 0;
+}
+
+.main-nav__sign-course {
+  margin: 0;
 }

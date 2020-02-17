@@ -10,22 +10,22 @@
   </head>
   <body>
     <header class="page-header color-block">
-      <div class="section-inner section-inner--header color-block">
-        <nav class="main-nav color-block">
-          <ul class="nav-city color-block" data-deep="2">
+      <nav class="main-nav color-block">
+        <div class="main-nav__inner color-block">
+          <ul class="main-nav__city nav-city color-block" data-deep="2">
             <li><a href="#">Санкт-петербург</a></li>
             <li><a href="#">Москва</a></li>
             <li><a href="#">Минск</a></li>
           </ul>
-          <ul class="nav-menu color-block" data-deep="1">
+          <ul class="main-nav__menu nav-menu color-block" data-deep="2">
             <li><a href="#">Программа</a></li>
             <li><a href="#">Отзывы</a></li>
             <li><a href="#">Стоимость</a></li>
             <li><a href="#">О преподавателе</a></li>
           </ul>
-          <a class="sign-course color-block" href="#">Запись на курс</a>
-        </nav>
-      </div>
+          <a class="main-nav__sign-course sign-course color-block" href="#">Запись на курс</a>
+        </div>
+      </nav>
     </header>
     <main class="page-main color-block">
       <section class="page-main__top section-top color-block">
@@ -208,7 +208,8 @@
         </div>
       </section>
       <section class="page-main__past-flow section-past-flow color-block">
-        <div class="section-inner section-inner--past-flow color-block">
+        <div class="section-inner section-inner--past-flow color-block" data-deep="2">
+          <h2 class="section-title">Как проходили прошлые потоки</h2>
           <ul>
             <li><img src="#" alt="flow 1"></li>
             <li><img src="#" alt="flow 2"></li>
