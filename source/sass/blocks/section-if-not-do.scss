@@ -1,4 +1,11 @@
 .section-if-not-do {
-  //max-width: $desktop-width;
-  //margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 75px 0;
+}
+
+.section-if-not-do__inner {
+  width: calc(#{$desktop-width} - 100px * 2);
+  //min-height: 100px;
+  padding: 0 35px 0 30px;
 }
