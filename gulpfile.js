@@ -10,7 +10,8 @@ const server = require("browser-sync").create();
 // const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const del = require("del");
-const webpack = require('webpack');
+const uglify = require('gulp-uglify');
+// const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 
@@ -37,7 +38,10 @@ gulp.task("css", function () {
 
 gulp.task('scripts', function () {
   return gulp.src('./source/js/main.js')
-    .pipe(webpackStream(webpackConfig), webpack)
+    .pipe(webpackStream(require('./webpack.config.js')))
+    .pipe(gulp.dest('build/js/'))
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build/js/'));
 });
 
