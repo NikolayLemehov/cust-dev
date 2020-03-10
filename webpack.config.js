@@ -38,7 +38,7 @@ module.exports = {
   output: {// Настройка выходного файла
     filename: `js/bundle.js`,
     path: path.join(__dirname, `build`),
-    sourcePrefix: '../'
+    publicPath: '../'
   },
   devtool: 'source-map', // Подключаем sourcemaps
   optimization: getOptimization(),
@@ -57,18 +57,18 @@ module.exports = {
       //   from: `./css`,
       //   to: path.join(__dirname, `build/css/`)
       // },
-      {
-        from: `./fonts`,
-        to: path.join(__dirname, `build/fonts/`)
-      },
+      // {
+      //   from: `./fonts`,
+      //   to: path.join(__dirname, `build/fonts/`)
+      // },
       // {
       //   from: `./img`,
       //   to: path.join(__dirname, `build/img/`)
       // },
-      {
-        from: `./layout`,
-        to: path.join(__dirname, `build/layout/`)
-      }
+      // {
+      //   from: `./layout`,
+      //   to: path.join(__dirname, `build/layout/`)
+      // }
     ]),
     new MiniCssExtractPlugin({
       filename: `./css/style.min.css`
@@ -96,7 +96,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '../[path][name].[ext]'
+              name: '[path][name].[ext]'
             },
           }
         ],
@@ -107,7 +107,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '../[path][name].[ext]'
+              name: '[path][name].[ext]'
             },
           }
         ],
